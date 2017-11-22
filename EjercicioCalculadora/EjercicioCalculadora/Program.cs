@@ -4,82 +4,48 @@ namespace EjercicioCalculadora
 {
     class Program
     {
-
-        static int Suma(int a, int b)
+        static void Main(string[] args)
         {
-            int suma = a + b;
-            return suma;
-        }
-        static int Resta(int a, int b)
-        {
-            int resta = a - b;
-            return resta;
-        }
-        static int Multiplicacion(int a, int b)
-        {
-            int multiplicacion = a * b;
-            return multiplicacion;
-        }
-        static int Division(int a, int b)
-        {
-            int division = a / b;
-            return division;
-        }
-        
-        static void Main()
-        {
-            try
+            string decision;
+            do
             {
-                int a, b;
-                a = 5;
-                b = 0;
-                int c = a / b;
+                int primerValor, segundoValor;
+                string operacion;
+
+
+                Console.Write("Ingrese un número: ");
+                primerValor = int.Parse(Console.ReadLine());
+
+                Console.Write("Elija una operación: ");
+                operacion = Console.ReadLine();
+
+                Console.Write("Ingrese otro número: ");
+                segundoValor = int.Parse(Console.ReadLine());
+
+                switch (operacion)
+                {
+                    case "+":
+                        Console.Write("Su resultado es: " + Calculadora.Sumar(primerValor, segundoValor));
+                        break;
+                    case "-":
+                        Console.Write("Su resultado es: " + Calculadora.Restar(primerValor, segundoValor));
+                        break;
+                    case "*":
+                        Console.Write("Su resultado es: " + Calculadora.Multiplicar(primerValor, segundoValor));
+                        break;
+                    case "/":
+                        Console.Write("Su resultado es: " + Calculadora.Dividir(primerValor, segundoValor));
+                        break;
+                }
+
+                Console.ReadKey();
+                Console.Clear();
+                Console.Write("Desea realizar otra operación? s/n");
+                decision = Console.ReadLine();
+
             }
+            while (decision.ToLower() == "s");
 
-            catch(Exception gustavo)
-            {
-
-                //throw gustavo;
-            }
-
-            int primerNumero, segundoNumero, operacion;
-            string valorIngresado;
-            Console.Write("Ingrese primer valor: ");
-            valorIngresado = Console.ReadLine();
-            if (!int.TryParse(valorIngresado, out primerNumero) || primerNumero < 0)
-            {
-                Environment.Exit(0);
-            }
-
-            Console.Write("Seleccione una opción: " + "\n");
-            Console.Write("1) Suma" + "\n" + "2) Resta" + "\n" + "3) Multiplicación" + "\n" + "4) División" + "\n");
-            operacion = int.Parse(Console.ReadLine());
-            
-            Console.Write("Ingrese segundo valor: ");
-            valorIngresado = Console.ReadLine();
-
-            if (!int.TryParse(valorIngresado, out segundoNumero) || segundoNumero < 0)
-            {
-                Environment.Exit(0);
-            }
-
-
-            switch (operacion)
-            {
-                case +:
-                    Console.Write("La operación elegida es suma y el resultado es = " + Suma(primerNumero, segundoNumero));
-                    break;
-                case 2:
-                    Console.Write("La operación elegida es resta y el resultado es = " + Resta(primerNumero, segundoNumero));
-                    break;
-                case 3:
-                    Console.Write("La operación elegida es multiplicación y el resultado es = " + Multiplicacion(primerNumero, segundoNumero));
-                    break;
-                case 4:
-                    Console.Write("La operación elegida es división y el resultado es = " + Division(primerNumero, segundoNumero));
-                    break;
-            }
-            Console.ReadKey();
         }
     }
 }
