@@ -1,0 +1,6 @@
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\bin\Debug\EjercicioCalculadora.exe.config
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\bin\Debug\EjercicioCalculadora.exe
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\bin\Debug\EjercicioCalculadora.pdb
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\obj\Debug\EjercicioCalculadora.csprojResolveAssemblyReference.cache
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\obj\Debug\EjercicioCalculadora.exe
+C:\Users\grodriguez\Documents\Visual Studio 2017\Projects\Ejercicio Calculadora\EjercicioCalculadora\EjercicioCalculadora\obj\Debug\EjercicioCalculadora.pdb
